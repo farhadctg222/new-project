@@ -38,14 +38,14 @@
         </div>
     </section>
     <div id="matches">
-    <h1 id="unMatch">this is not matches your Number</h1>
+    <h1 id="unmatch">this is not matches your Number</h1>
     <h2 id="match">you are succesfully matches Number</h2></div>
     <script>
         // button sectin start
         const Button = document.getElementById('button')
         Button.addEventListener('click',function(){
         const NewButton = document.getElementById('button')
-        const RandomNumber = Math.random(NewButton)*10000000
+        const RandomNumber = Math.random(NewButton)*10
         const cell = Math.round(RandomNumber)
         document.getElementById('inputButton').value = cell
 
@@ -75,7 +75,7 @@
          const all  =  b + ''+ c 
          
          document.getElementById('input').value = all
-
+         convert()
 
         })
 
@@ -85,7 +85,7 @@
          const input1 = document.getElementById('input').value
          const all1  =  two1 + ''+ input1 
          document.getElementById('input').value = all1
-
+         convert()
 
         })
         const three = document.getElementById('three')
@@ -94,7 +94,7 @@
          const input2 = document.getElementById('input').value
          const all2  =  three1 + ''+ input2 
          document.getElementById('input').value = all2
-
+         convert()
 
         })
         const four = document.getElementById('four')
@@ -103,7 +103,7 @@
          const input4 = document.getElementById('input').value
          const all4  =  four1 + ''+ input4 
          document.getElementById('input').value = all4
-
+         convert()
 
         })
         const five = document.getElementById('five')
@@ -112,16 +112,16 @@
          const input5 = document.getElementById('input').value
          const all5  =  five1 + ''+ input5 
          document.getElementById('input').value = all5
-
+         convert()
 
         })
         const six = document.getElementById('six')
         six.addEventListener('click',function(){
-        const six1 = document.getElementById('two').value
+        const six1 = document.getElementById('six').value
          const input6 = document.getElementById('input').value
          const all6  =  six1 + ''+ input6 
          document.getElementById('input').value = all6
-
+         convert()
 
         })
         const seven = document.getElementById('seven')
@@ -131,7 +131,7 @@
          const all7  =  seven1 + ''+ input7 
          document.getElementById('input').value = all7
 
-
+         convert()
         })
         const eight = document.getElementById('eight')
         eight.addEventListener('click',function(){
@@ -139,7 +139,7 @@
          const input8 = document.getElementById('input').value
          const all8  =  eight1 + ''+ input8 
          document.getElementById('input').value = all8
-
+         convert()
 
         })
         const nine = document.getElementById('nine')
@@ -148,6 +148,7 @@
          const input9 = document.getElementById('input').value
          const all9  =  nine1 + ''+ input9 
          document.getElementById('input').value = all9
+         convert()
 
 
         })
@@ -158,7 +159,7 @@
          const inputzero = document.getElementById('input').value
          const allzero  =  zero1 + ''+ inputzero 
          document.getElementById('input').value = allzero
-
+         convert()
 
         })
 const clear = document.getElementById('clear')
@@ -170,9 +171,22 @@ clear.addEventListener('click',function(){
 function convert(){
     const abc = document.getElementById('input').value
     const ccb = parseFloat(abc)
+    const aaaaa = document.getElementById('inputButton').value
+    const bbbb = parseFloat(aaaaa)
+    if (ccb===bbbb) {
+        document.getElementById('match').style.display = 'block'
+    }
+    else{
+        document.getElementById('unmatch').style.display = 'block'
+    }
 }
         
-   
+//    if (document.getElementById('input').value===document.getElementById('inputButton').value) {
+//     document.getElementById('match').style.display = 'block'
+//    }
+//    else{
+//     document.getElementById('unmatch').style.display = 'lock'
+//    }
     </script>
 
 </body>

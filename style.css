@@ -58,6 +58,9 @@ h2{
     text-align: center;
     color: green;
 }
-#matches{
+#match{
+    display: none;
+}
+#unmatch{
     display: none;
 }
