@@ -173,12 +173,18 @@ function convert(){
     const ccb = parseFloat(abc)
     const aaaaa = document.getElementById('inputButton').value
     const bbbb = parseFloat(aaaaa)
-    if (ccb===bbbb) {
+    if (ccb ===bbbb) {
         document.getElementById('match').style.display = 'block'
+        document.getElementById('unmatch').style.display = 'none'
+    }
+    else if(ccb != bbbb){
+    document.getElementById('unmatch').style.display = 'block'
+    document.getElementById('match').style.display = 'none'
     }
     else{
-        document.getElementById('unmatch').style.display = 'block'
+        document.getElementById('matches').style.display = 'none'
     }
+   
 }
         
 //    if (document.getElementById('input').value===document.getElementById('inputButton').value) {
