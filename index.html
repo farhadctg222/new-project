@@ -20,7 +20,7 @@
             <input type="text" name="" id="input"><br>
 
             <div class="button">
-            <button id="one">1</button>
+            <button id="one" value="1">1</button>
             <button id="two">2</button>
             <button id="three">3</button>
             <br>
@@ -50,19 +50,14 @@
 
             
     })
-        // button section end
+  
+        const a = document.getElementById('one')
+        a.addEventListener('click',function(){
+        const b = document.getElementById('one').value
+         const c = document.getElementById('input').value
+         const all  =  b + ''+ c 
+         document.getElementById('input').value = all
 
-        // calculator section start
-
-        const one = document.getElementById('one')
-        one.addEventListener('click',function(){
-        const dd = document.getElementById('one')
-        const f = 1 + 
-        const a =  document.getElementById('input').value = f
-        
-        //   const a = document.getElementById('input')
-          
-        //   document.getElementById('input').value = a
 
         })
         
