@@ -20,25 +20,26 @@
             <input type="text" name="" id="input"><br>
 
             <div class="button">
-            <button id="one" value="1">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
+            <button id="one" value="1" >1</button>
+            <button id="two" value="2" >2</button>
+            <button id="three" value="3">3</button>
             <br>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
+            <button id="four" value="4">4</button>
+            <button value="5" id="five">5</button>
+            <button value="6" id="six">6</button>
             <br>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button><br>
+            <button value="7" id="seven">7</button>
+            <button value="8" id="eight">8</button>
+            <button value="9" id="nine">9</button><br>
             <button id="greter"><</button>
-            <button id="zero">0</button>
-            <button id="clear">c</button>
+            <button value="0" id="zero">0</button>
+            <button  id="clear">c</button>
         </div>
         </div>
     </section>
-    <h1>this is not matches your Number</h1>
-    <h2>you are succesfully matches Number</h2>
+    <div id="matches">
+    <h1 id="unMatch">this is not matches your Number</h1>
+    <h2 id="match">you are succesfully matches Number</h2></div>
     <script>
         // button sectin start
         const Button = document.getElementById('button')
@@ -50,16 +51,126 @@
 
             
     })
+    // function my(id,one){
+
+    //     const a = document.getElementById(id,'one')
+    //     a.addEventListener('click',function(){
+    //     const b = document.getElementById('one').value
+    //      const c = document.getElementById('input').value
+    //      const all  =  b + ''+ c 
+    //      document.getElementById('input').v = all
+
+
+    //     })
+
+        
+    // }
+    
+    
   
         const a = document.getElementById('one')
         a.addEventListener('click',function(){
         const b = document.getElementById('one').value
          const c = document.getElementById('input').value
          const all  =  b + ''+ c 
+         
          document.getElementById('input').value = all
 
 
         })
+
+        const two = document.getElementById('two')
+        two.addEventListener('click',function(){
+        const two1 = document.getElementById('two').value
+         const input1 = document.getElementById('input').value
+         const all1  =  two1 + ''+ input1 
+         document.getElementById('input').value = all1
+
+
+        })
+        const three = document.getElementById('three')
+        three.addEventListener('click',function(){
+        const three1 = document.getElementById('three').value
+         const input2 = document.getElementById('input').value
+         const all2  =  three1 + ''+ input2 
+         document.getElementById('input').value = all2
+
+
+        })
+        const four = document.getElementById('four')
+        four.addEventListener('click',function(){
+        const four1 = document.getElementById('four').value
+         const input4 = document.getElementById('input').value
+         const all4  =  four1 + ''+ input4 
+         document.getElementById('input').value = all4
+
+
+        })
+        const five = document.getElementById('five')
+        five.addEventListener('click',function(){
+        const five1 = document.getElementById('five').value
+         const input5 = document.getElementById('input').value
+         const all5  =  five1 + ''+ input5 
+         document.getElementById('input').value = all5
+
+
+        })
+        const six = document.getElementById('six')
+        six.addEventListener('click',function(){
+        const six1 = document.getElementById('two').value
+         const input6 = document.getElementById('input').value
+         const all6  =  six1 + ''+ input6 
+         document.getElementById('input').value = all6
+
+
+        })
+        const seven = document.getElementById('seven')
+        seven.addEventListener('click',function(){
+        const seven1 = document.getElementById('seven').value
+         const input7 = document.getElementById('input').value
+         const all7  =  seven1 + ''+ input7 
+         document.getElementById('input').value = all7
+
+
+        })
+        const eight = document.getElementById('eight')
+        eight.addEventListener('click',function(){
+        const eight1 = document.getElementById('eight').value
+         const input8 = document.getElementById('input').value
+         const all8  =  eight1 + ''+ input8 
+         document.getElementById('input').value = all8
+
+
+        })
+        const nine = document.getElementById('nine')
+        nine.addEventListener('click',function(){
+        const nine1 = document.getElementById('nine').value
+         const input9 = document.getElementById('input').value
+         const all9  =  nine1 + ''+ input9 
+         document.getElementById('input').value = all9
+
+
+        })
+
+        const zero = document.getElementById('zero')
+        zero.addEventListener('click',function(){
+        const zero1 = document.getElementById('zero').value
+         const inputzero = document.getElementById('input').value
+         const allzero  =  zero1 + ''+ inputzero 
+         document.getElementById('input').value = allzero
+
+
+        })
+const clear = document.getElementById('clear')
+clear.addEventListener('click',function(){
+   document.getElementById('input').value = ""
+   
+    
+})
+function convert(){
+    const abc = document.getElementById('input').value
+    const ccb = parseFloat(abc)
+}
         
    
     </script>
