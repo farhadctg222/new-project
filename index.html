@@ -33,12 +33,13 @@
             <button value="9" id="nine">9</button><br>
             <button id="greter"><</button>
             <button value="0" id="zero">0</button>
-            <button id="clear">c</button>
+            <button  id="clear">c</button>
         </div>
         </div>
     </section>
-    <h1>this is not matches your Number</h1>
-    <h2>you are succesfully matches Number</h2>
+    <div id="matches">
+    <h1 id="unMatch">this is not matches your Number</h1>
+    <h2 id="match">you are succesfully matches Number</h2></div>
     <script>
         // button sectin start
         const Button = document.getElementById('button')
@@ -64,6 +65,7 @@
 
         
     // }
+    
     
   
         const a = document.getElementById('one')
@@ -124,7 +126,7 @@
         })
         const seven = document.getElementById('seven')
         seven.addEventListener('click',function(){
-        const seven1 = document.getElementById('two').value
+        const seven1 = document.getElementById('seven').value
          const input7 = document.getElementById('input').value
          const all7  =  seven1 + ''+ input7 
          document.getElementById('input').value = all7
@@ -159,7 +161,12 @@
 
 
         })
-
+const clear = document.getElementById('clear')
+clear.addEventListener('click',function(){
+   document.getElementById('input').value = ""
+   
+    
+})
         
    
     </script>
