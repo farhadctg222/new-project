@@ -64,3 +64,16 @@ h2{
 #unmatch{
     display: none;
 }
+@media (max-width: 400px) {
+    #match{
+        background-color: bisque;
+        margin: 0 0 0 150px;
+        width: 200px;
+        
+    }
+    #unmatch{
+        background-color: rgb(48, 116, 3);
+        margin: 0 auto;
+        
+    }
+}
