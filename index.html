@@ -20,41 +20,41 @@
             <input type="text" name="" id=""><br>
 
             <div class="button">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
             <br>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
             <br>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button><br>
-            <button><</button>
-            <button>0</button>
-            <button>c</button>
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button><br>
+            <button id="greter"><</button>
+            <button id="zero">0</button>
+            <button id="clear">c</button>
         </div>
         </div>
     </section>
     <h1>this is not matches your Number</h1>
     <h2>you are succesfully matches Number</h2>
     <script>
+        // button sectin start
         const Button = document.getElementById('button')
         Button.addEventListener('click',function(){
         const NewButton = document.getElementById('button')
         const RandomNumber = Math.random(NewButton)*10000000
         const cell = Math.round(RandomNumber)
         document.getElementById('inputButton').value = cell
+        // button section end
+
+        // calculator section start
+
         
         
-        
-        // const random = Math.random(inputNumber)
        
-        
-
-
-        })
+    })
     </script>
 
 </body>
