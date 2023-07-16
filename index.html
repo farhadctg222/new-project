@@ -32,7 +32,7 @@
             <button value="8" id="eight">8</button>
             <button value="9" id="nine">9</button><br>
             <button id="greter"><</button>
-            <button id="zero">0</button>
+            <button value="0" id="zero">0</button>
             <button id="clear">c</button>
         </div>
         </div>
@@ -146,6 +146,16 @@
          const input9 = document.getElementById('input').value
          const all9  =  nine1 + ''+ input9 
          document.getElementById('input').value = all9
+
+
+        })
+
+        const zero = document.getElementById('zero')
+        zero.addEventListener('click',function(){
+        const zero1 = document.getElementById('zero').value
+         const inputzero = document.getElementById('input').value
+         const allzero  =  zero1 + ''+ inputzero 
+         document.getElementById('input').value = allzero
 
 
         })
