@@ -70,8 +70,9 @@ h2{
     }
     #match{
         background-color: bisque;
-        margin: 0 0 0 150px;
+        margin: 0 0 0 200px;
         width: 400px;
+        font-size: 30px;
         
     }
     #unmatch{
@@ -79,7 +80,8 @@ h2{
         color: white;
         background-color: rgb(255, 0, 21);
         width: 400px;
-        margin: 0 auto;
+        margin: 0 0 0  200px;
+        font-size: 30px;
         
 
     }
