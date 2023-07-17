@@ -72,15 +72,16 @@ h2{
     
 }
 #unmatch{
-        display: none;
-        text-align: center;
-        font-weight: bolder;
-        color: rgb(255, 255, 255);
-        background-color: rgb(255, 0, 0);
-        width: 100%;
-        
-        margin: 100px 0 0  200px;
-        font-size: 30px;
+    display: none;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    margin: 100px 0 0 200px;
+    width: 100%;
+    
+   
+    font-size: 30px;
 }
 @media (max-width: 400px) {
     bod{
