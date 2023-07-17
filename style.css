@@ -66,8 +66,10 @@ h2{
     display: none;
 }
 @media (max-width: 400px) {
-    body{
+    bod{
         width: 100%;
+    }
+   
     }
     #match{
         background-color: bisque;
@@ -86,4 +88,3 @@ h2{
         
 
     }
-}
