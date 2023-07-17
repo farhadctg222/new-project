@@ -73,9 +73,9 @@ h2{
     display: none;
     text-align: center;
         font-weight: bolder;
-        color: white;
+        color: rgb(98, 1, 255);
         background-color: rgb(255, 0, 0);
-        width: 500px;
+        width: 100%;
         margin: 0 0 0  200px;
         font-size: 30px;
 }
