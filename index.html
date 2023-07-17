@@ -9,7 +9,7 @@
 <body>
     <!-- section start  --><section class="all">
     <div class="box">
-        <input type="text" name="" id="inputButton">
+        <input type="number" name="" id="inputButton">
         <div class="round">
             <button id="button" class="button1">Generate <br>Number</button>
         </div>
@@ -17,7 +17,7 @@
     <!-- section end -->
     
         <div class="cal">
-            <input type="text" name="" id="input"><br>
+            <input type="number" name="" id="input"><br>
 
             <div class="button">
             <button id="one" value="1" >1</button>
@@ -40,6 +40,7 @@
     <div id="matches">
     <h1 id="unmatch">this is not matches your Number</h1>
     <h2 id="match">you are succesfully matches Number</h2></div>
+    
     <script>
         // button sectin start
         const Button = document.getElementById('button')
@@ -182,7 +183,8 @@ function convert(){
     document.getElementById('match').style.display = 'none'
     }
     else{
-        document.getElementById('matches').style.display = 'none'
+        document.getElementById('match').style.display = 'block'
+        document.getElementById('unmatch').style.display = 'block'
     }
    
 }
